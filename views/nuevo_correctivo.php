@@ -297,14 +297,9 @@ foreach ($proveedores as $p) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $page_title; ?> - Maxia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
+<?php include '../includes/header.php'; ?>
+
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -326,7 +321,7 @@ foreach ($proveedores as $p) {
         }
 
         /* Header */
-        .header {
+        .form-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -335,7 +330,7 @@ foreach ($proveedores as $p) {
             margin-bottom: 20px;
         }
 
-        .header h1 {
+        .form-header h1 {
             font-size: 24px;
             font-weight: 400;
             color: #333;
@@ -708,18 +703,18 @@ foreach ($proveedores as $p) {
                 grid-column: span 1;
             }
             
-            .header {
+            .form-header {
                 flex-direction: column;
                 gap: 10px;
                 align-items: flex-start;
             }
         }
     </style>
-</head>
-<body>
-    <div class="main-container">
+
+    <div class="page-content">
+        <div class="main-container">
         <!-- Header -->
-        <div class="header">
+        <div class="form-header">
             <h1><?php echo $is_edit ? 'Editar correctivo' : 'Nuevo correctivo'; ?></h1>
             <div class="user-info">AF <?php echo strtoupper($_SESSION['usuario_nombre']); ?></div>
         </div>
@@ -1224,6 +1219,7 @@ foreach ($proveedores as $p) {
             </div>
         </form>
     </div>
+    </div>
 
     <script>
         // Variables globales
@@ -1649,5 +1645,4 @@ foreach ($proveedores as $p) {
             <?php endif; ?>
         });
     </script>
-</body>
-</html>
+<?php include '../includes/footer.php'; ?>

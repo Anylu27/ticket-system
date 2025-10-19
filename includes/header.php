@@ -50,9 +50,9 @@ if (strlen($iniciales) > 2) {
                 <h2><i class="fas fa-ticket-alt"></i> Tickets</h2>
                 <p>Hospital Santa Fe</p>
             </div>
-            <?php include 'sidebar.php'; ?>
+            <?php include __DIR__ . '/sidebar.php'; ?>
         </div>
-        
+
         <!-- Contenido principal -->
         <div class="main-content">
             <!-- Header -->
@@ -63,6 +63,6 @@ if (strlen($iniciales) > 2) {
                     <span><?php echo htmlspecialchars($usuario_actual['nombre']); ?></span>
                 </div>
             </div>
-            
+
             <!-- Área de contenido -->
             <div class="content-area">
