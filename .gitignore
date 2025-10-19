@@ -1,0 +1,17 @@
+@"
+# Archivos sensibles / datos
+credenciales.json
+token.json
+*.csv
+*.xlsx
+
+# Cosas comunes
+.env
+*.env
+*.log
+.DS_Store
+
+# Dependencias
+node_modules/
+vendor/
+"@ | Out-File -Encoding utf8 -NoNewline .gitignore
