@@ -233,7 +233,7 @@ include '../includes/header.php';
                     <select id="filtroNivel" onchange="filtrarUsuarios()">
                         <option value="">Todos los niveles</option>
                         <option value="Directores / Gerentes">Directores / Gerentes</option>
-                        <option value="Ingenieros / Tecnicos">Ingenieros / Técnicos</option>
+                        <option value="Ingenieros / Tecnicos">Ingenieros / T&eacute;cnicos</option>
                         <option value="Clientes CEMI">Clientes CEMI</option>
                         <option value="Cliente SYM">Cliente SYM</option>
                     </select>
@@ -390,7 +390,7 @@ include '../includes/header.php';
                         <select id="usuarioNivel" name="nivel" required>
                             <option value="Cliente SYM">Cliente SYM</option>
                             <option value="Clientes CEMI">Clientes CEMI</option>
-                            <option value="Ingenieros / Tecnicos">Ingenieros / Técnicos</option>
+                            <option value="Ingenieros / Tecnicos">Ingenieros / T&eacute;cnicos</option>
                             <option value="Directores / Gerentes">Directores / Gerentes</option>
                         </select>
                     </div>
